@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job Crafting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pP-Ql-ida">
-                                <rect key="frame" x="57" y="320" width="300" height="60"/>
+                                <rect key="frame" x="57" y="244" width="300" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="ct6-h9-dtd"/>
                                 </constraints>
@@ -26,11 +26,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="めざせジョブクラフティングマスター！！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwL-6Y-BCv">
-                                <rect key="frame" x="13.5" y="480" width="387.5" height="24"/>
+                                <rect key="frame" x="33" y="404" width="348.5" height="21.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="rkM-D5-sG5"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -39,7 +39,7 @@
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
                             <constraint firstItem="2pP-Ql-ida" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="0z4-eG-ss9"/>
-                            <constraint firstItem="2pP-Ql-ida" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="350" id="UmL-JI-Xwl"/>
+                            <constraint firstItem="2pP-Ql-ida" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="BYh-5g-CDs"/>
                             <constraint firstItem="gwL-6Y-BCv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ZHR-2m-HnO"/>
                             <constraint firstItem="gwL-6Y-BCv" firstAttribute="top" secondItem="2pP-Ql-ida" secondAttribute="bottom" constant="100" id="ZdI-3f-Eg5"/>
                         </constraints>

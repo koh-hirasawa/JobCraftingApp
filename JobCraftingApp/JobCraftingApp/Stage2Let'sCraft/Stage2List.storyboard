@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ykw-gr-weD">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="stage2ListCellId" id="O4X-DG-XGL">
@@ -43,32 +43,403 @@
                     <navigationItem key="navigationItem" title="Stage2:ジョブクラフティング実践編" id="7VF-Qt-Kbw"/>
                     <connections>
                         <outlet property="stage2ListTableView" destination="Ykw-gr-weD" id="BUZ-ga-GyF"/>
+                        <segue destination="rEk-gR-UY6" kind="presentation" identifier="craftRuleSegue" id="fYy-Wc-sNn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kfC-ub-SmR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="892.75362318840587" y="52.901785714285715"/>
+            <point key="canvasLocation" x="887" y="60"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hCU-PT-9Jf">
+            <objects>
+                <viewController id="MF2-b6-cay" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yhI-Na-Bx4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="いよいよ実践編です  あなた自身の仕事について ジョブクラフティングしてみましょう" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PyI-Rr-PVD">
+                                <rect key="frame" x="0.0" y="138" width="414" height="76.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="スクリーンショット 2021-01-22 12.00.31" translatesAutoresizingMaskIntoConstraints="NO" id="mU3-uO-Hho">
+                                <rect key="frame" x="103.5" y="607" width="207" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="I2A-o7-qFt"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bze-S3-yP8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PyI-Rr-PVD" firstAttribute="leading" secondItem="Bze-S3-yP8" secondAttribute="leading" id="Gop-Pv-76a"/>
+                            <constraint firstItem="mU3-uO-Hho" firstAttribute="width" secondItem="yhI-Na-Bx4" secondAttribute="width" multiplier="0.5" id="PNx-7F-X9I"/>
+                            <constraint firstItem="mU3-uO-Hho" firstAttribute="centerX" secondItem="yhI-Na-Bx4" secondAttribute="centerX" id="aZ7-VP-tHR"/>
+                            <constraint firstItem="Bze-S3-yP8" firstAttribute="trailing" secondItem="PyI-Rr-PVD" secondAttribute="trailing" id="bWc-Jg-zkO"/>
+                            <constraint firstItem="PyI-Rr-PVD" firstAttribute="centerX" secondItem="yhI-Na-Bx4" secondAttribute="centerX" id="pUc-tv-REo"/>
+                            <constraint firstItem="PyI-Rr-PVD" firstAttribute="top" secondItem="Bze-S3-yP8" secondAttribute="top" constant="50" id="pnS-Yp-wvp"/>
+                            <constraint firstItem="Bze-S3-yP8" firstAttribute="bottom" secondItem="mU3-uO-Hho" secondAttribute="bottom" constant="5" id="uX2-jQ-8ZN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="edj-mb-ku0">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="1UV-ok-KDL">
+                            <connections>
+                                <segue destination="xgS-TW-i3V" kind="show" id="6Dv-HM-gd7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZjM-89-rVh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2556.521739130435" y="59.598214285714285"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kBl-hw-MkN">
+            <objects>
+                <viewController id="xgS-TW-i3V" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aXU-F4-vu2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="右上の＋ボタンから 今やっている仕事の内容を できるだけ細かく分解して 具体的に書き出しましょう  仕事で感じているモヤモヤ感もあると 解決する方向がわかりやすくなります" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ep3-iT-S1C">
+                                <rect key="frame" x="0.0" y="138" width="414" height="134"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="スクリーンショット 2021-01-22 12.07.52" translatesAutoresizingMaskIntoConstraints="NO" id="VoP-wF-p9u">
+                                <rect key="frame" x="0.0" y="617" width="207" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="VIx-CT-gBa"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="スクリーンショット 2021-01-22 12.14.35" translatesAutoresizingMaskIntoConstraints="NO" id="7mJ-sj-tfh">
+                                <rect key="frame" x="207" y="617" width="207" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="2U9-dp-iZ5"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="D2C-UU-utn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ep3-iT-S1C" firstAttribute="leading" secondItem="D2C-UU-utn" secondAttribute="leading" id="07Y-dJ-CRf"/>
+                            <constraint firstItem="7mJ-sj-tfh" firstAttribute="width" secondItem="aXU-F4-vu2" secondAttribute="width" multiplier="0.5" id="2Md-tY-qct"/>
+                            <constraint firstItem="VoP-wF-p9u" firstAttribute="width" secondItem="aXU-F4-vu2" secondAttribute="width" multiplier="0.5" id="3y3-Zv-eZR"/>
+                            <constraint firstItem="ep3-iT-S1C" firstAttribute="trailing" secondItem="D2C-UU-utn" secondAttribute="trailing" id="7iR-Xa-OnI"/>
+                            <constraint firstItem="ep3-iT-S1C" firstAttribute="centerX" secondItem="aXU-F4-vu2" secondAttribute="centerX" id="FZn-ea-vlu"/>
+                            <constraint firstItem="7mJ-sj-tfh" firstAttribute="bottom" secondItem="D2C-UU-utn" secondAttribute="bottom" constant="5" id="Ngt-Bs-nlG"/>
+                            <constraint firstItem="7mJ-sj-tfh" firstAttribute="trailing" secondItem="D2C-UU-utn" secondAttribute="trailing" id="S3o-5O-1Kp"/>
+                            <constraint firstItem="VoP-wF-p9u" firstAttribute="leading" secondItem="D2C-UU-utn" secondAttribute="leading" id="t71-qF-HmD"/>
+                            <constraint firstItem="VoP-wF-p9u" firstAttribute="bottom" secondItem="D2C-UU-utn" secondAttribute="bottom" constant="5" id="tZe-DF-K6R"/>
+                            <constraint firstItem="ep3-iT-S1C" firstAttribute="top" secondItem="D2C-UU-utn" secondAttribute="top" constant="50" id="uiZ-zj-VBH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="068-cS-dpb">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="Uf8-nz-g9n">
+                            <connections>
+                                <segue destination="Wbf-Qc-LG1" kind="show" id="Ty0-At-cyV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ksp-go-gOy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3347.826086956522" y="59.598214285714285"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0nf-o3-KRb">
+            <objects>
+                <viewController id="Wbf-Qc-LG1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jMQ-FY-ZhV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="入力したものは モヤモヤリストに溜まっていきます  次は右下の「わたしの軸」に移動して ＋ボタンから方向性を決める軸を 入力しましょう" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpU-Kb-bnH">
+                                <rect key="frame" x="0.0" y="138" width="414" height="115"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="スクリーンショット 2021-01-22 12.14.42" translatesAutoresizingMaskIntoConstraints="NO" id="X5t-bb-YGG">
+                                <rect key="frame" x="0.0" y="641" width="207" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="GJs-S3-cva"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="スクリーンショット 2021-01-22 12.14.59" translatesAutoresizingMaskIntoConstraints="NO" id="7KE-3F-HfN">
+                                <rect key="frame" x="207" y="641" width="207" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="M5z-io-Wva"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="epY-ZO-mYg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7KE-3F-HfN" firstAttribute="width" secondItem="jMQ-FY-ZhV" secondAttribute="width" multiplier="0.5" id="24L-PQ-49l"/>
+                            <constraint firstItem="QpU-Kb-bnH" firstAttribute="leading" secondItem="epY-ZO-mYg" secondAttribute="leading" id="GAe-fE-RQ4"/>
+                            <constraint firstItem="QpU-Kb-bnH" firstAttribute="trailing" secondItem="epY-ZO-mYg" secondAttribute="trailing" id="UKo-3p-a2P"/>
+                            <constraint firstAttribute="bottom" secondItem="7KE-3F-HfN" secondAttribute="bottom" constant="5" id="Xus-ia-vvZ"/>
+                            <constraint firstItem="7KE-3F-HfN" firstAttribute="trailing" secondItem="epY-ZO-mYg" secondAttribute="trailing" id="aOL-8B-kk4"/>
+                            <constraint firstItem="X5t-bb-YGG" firstAttribute="leading" secondItem="epY-ZO-mYg" secondAttribute="leading" id="lad-XC-uBc"/>
+                            <constraint firstItem="QpU-Kb-bnH" firstAttribute="top" secondItem="epY-ZO-mYg" secondAttribute="top" constant="50" id="nXv-sU-7br"/>
+                            <constraint firstItem="X5t-bb-YGG" firstAttribute="width" secondItem="jMQ-FY-ZhV" secondAttribute="width" multiplier="0.5" id="wQC-hg-BgX"/>
+                            <constraint firstAttribute="bottom" secondItem="X5t-bb-YGG" secondAttribute="bottom" constant="5" id="xbD-HZ-vaJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4oP-JO-Dct">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="M9D-Dq-v7N">
+                            <connections>
+                                <segue destination="qk8-29-bWl" kind="show" id="IxV-o9-gp0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yj1-7e-l1r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4242" y="60"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="05Z-M2-Spx">
+            <objects>
+                <viewController id="qk8-29-bWl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aXK-ng-EXb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="動機：仕事を通じて得るとうれしいもの 強み：あなたの持っているスキル・特技 （仕事で使っていなくてもいいです） 熱意：興味関心があるもの・趣味 を入力しましょう  入力したら当てはまるボタンを押してリストに追加しましょう" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hx9-9W-1Rl">
+                                <rect key="frame" x="0.0" y="138" width="414" height="153"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="スクリーンショット 2021-01-22 12.47.12" translatesAutoresizingMaskIntoConstraints="NO" id="xbY-aa-6m7">
+                                <rect key="frame" x="0.0" y="641" width="207" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="4Nl-rV-4vY"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="スクリーンショット 2021-01-22 12.19.07" translatesAutoresizingMaskIntoConstraints="NO" id="w73-hE-d4F">
+                                <rect key="frame" x="207" y="641" width="207" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="0Br-Jm-QVr"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uIl-e3-wFc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="xbY-aa-6m7" secondAttribute="bottom" constant="5" id="4iZ-Rk-riT"/>
+                            <constraint firstItem="w73-hE-d4F" firstAttribute="width" secondItem="aXK-ng-EXb" secondAttribute="width" multiplier="0.5" id="Fbv-pl-ymr"/>
+                            <constraint firstItem="xbY-aa-6m7" firstAttribute="width" secondItem="aXK-ng-EXb" secondAttribute="width" multiplier="0.5" id="TJj-l5-dqK"/>
+                            <constraint firstItem="Hx9-9W-1Rl" firstAttribute="trailing" secondItem="uIl-e3-wFc" secondAttribute="trailing" id="XsF-zi-Xtu"/>
+                            <constraint firstItem="Hx9-9W-1Rl" firstAttribute="leading" secondItem="uIl-e3-wFc" secondAttribute="leading" id="aQt-7e-04H"/>
+                            <constraint firstItem="Hx9-9W-1Rl" firstAttribute="centerX" secondItem="aXK-ng-EXb" secondAttribute="centerX" id="eaP-m9-mOg"/>
+                            <constraint firstItem="Hx9-9W-1Rl" firstAttribute="top" secondItem="uIl-e3-wFc" secondAttribute="top" constant="50" id="jl9-tl-Awp"/>
+                            <constraint firstItem="w73-hE-d4F" firstAttribute="trailing" secondItem="uIl-e3-wFc" secondAttribute="trailing" id="n5b-13-UNX"/>
+                            <constraint firstItem="xbY-aa-6m7" firstAttribute="leading" secondItem="uIl-e3-wFc" secondAttribute="leading" id="pSL-Q2-IJZ"/>
+                            <constraint firstAttribute="bottom" secondItem="w73-hE-d4F" secondAttribute="bottom" constant="5" id="u07-WZ-flE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="aBy-g9-Sif">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="yn3-tJ-8Sc">
+                            <connections>
+                                <segue destination="SfW-Sw-etc" kind="show" id="LO3-a1-dW4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CNB-t2-AgB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4943" y="60"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5N8-6e-ZrT">
+            <objects>
+                <viewController id="SfW-Sw-etc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PK1-H4-13X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="いよいよジョブクラフティングです  モヤモヤリストから１つ選びましょう 下の「わたしの軸」を見ながら 解決する具体的な方法を考えましょう  合わなかったら修正すればいいのです アイディア力の見せ所ですよ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Sk-CY-baW">
+                                <rect key="frame" x="0.0" y="138" width="414" height="153"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="スクリーンショット 2021-01-22 12.49.17" translatesAutoresizingMaskIntoConstraints="NO" id="pTp-ne-VLF">
+                                <rect key="frame" x="0.0" y="617" width="207" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="VJg-2i-ZQH"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="スクリーンショット 2021-01-22 12.49.22" translatesAutoresizingMaskIntoConstraints="NO" id="PVe-4S-2Dj">
+                                <rect key="frame" x="207" y="617" width="207" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="fBl-nh-4m1"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0bp-OL-cb6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="PVe-4S-2Dj" secondAttribute="trailing" id="0io-Os-1xs"/>
+                            <constraint firstAttribute="bottom" secondItem="PVe-4S-2Dj" secondAttribute="bottom" constant="5" id="Dst-aO-so9"/>
+                            <constraint firstItem="PVe-4S-2Dj" firstAttribute="width" secondItem="PK1-H4-13X" secondAttribute="width" multiplier="0.5" id="Heu-6h-yyE"/>
+                            <constraint firstItem="3Sk-CY-baW" firstAttribute="centerX" secondItem="PK1-H4-13X" secondAttribute="centerX" id="IeE-ka-oxT"/>
+                            <constraint firstItem="pTp-ne-VLF" firstAttribute="leading" secondItem="0bp-OL-cb6" secondAttribute="leading" id="JrX-Wv-0mw"/>
+                            <constraint firstItem="pTp-ne-VLF" firstAttribute="width" secondItem="PK1-H4-13X" secondAttribute="width" multiplier="0.5" id="Ru2-9K-ups"/>
+                            <constraint firstItem="3Sk-CY-baW" firstAttribute="top" secondItem="0bp-OL-cb6" secondAttribute="top" constant="50" id="XNs-DQ-qDw"/>
+                            <constraint firstItem="pTp-ne-VLF" firstAttribute="bottom" secondItem="0bp-OL-cb6" secondAttribute="bottom" constant="5" id="lu9-1j-nHg"/>
+                            <constraint firstItem="3Sk-CY-baW" firstAttribute="trailing" secondItem="0bp-OL-cb6" secondAttribute="trailing" id="oGx-fU-zlx"/>
+                            <constraint firstItem="3Sk-CY-baW" firstAttribute="leading" secondItem="0bp-OL-cb6" secondAttribute="leading" id="uQv-m2-9Z9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="y6L-fM-cIe">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="qJS-KH-PH8">
+                            <connections>
+                                <segue destination="eru-QK-zvC" kind="show" id="B4e-gQ-vZb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="svs-sE-c8W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5842" y="60"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aX0-f8-BBX">
+            <objects>
+                <viewController id="eru-QK-zvC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Nk-Tz-nGs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="工夫の仕方を入力したら 当てはまる方法のボタンを押してください  それぞれの工夫方法に保存されます" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Isp-kJ-BMc">
+                                <rect key="frame" x="0.0" y="138" width="414" height="76.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="スクリーンショット 2021-01-22 12.56.13" translatesAutoresizingMaskIntoConstraints="NO" id="Be5-jf-jCr">
+                                <rect key="frame" x="0.0" y="641" width="207" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="sAW-tg-EYF"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="スクリーンショット 2021-01-22 12.56.18" translatesAutoresizingMaskIntoConstraints="NO" id="Djq-Os-Cpy">
+                                <rect key="frame" x="207" y="641" width="207" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="uTt-nk-42l"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rlL-2d-hzg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Be5-jf-jCr" firstAttribute="leading" secondItem="6Nk-Tz-nGs" secondAttribute="leading" id="8Ve-JO-hIV"/>
+                            <constraint firstItem="Djq-Os-Cpy" firstAttribute="width" secondItem="6Nk-Tz-nGs" secondAttribute="width" multiplier="0.5" id="9bw-Bx-D3M"/>
+                            <constraint firstItem="Be5-jf-jCr" firstAttribute="width" secondItem="6Nk-Tz-nGs" secondAttribute="width" multiplier="0.5" id="A56-yt-vjS"/>
+                            <constraint firstAttribute="bottom" secondItem="Be5-jf-jCr" secondAttribute="bottom" constant="5" id="Vjy-Xz-aop"/>
+                            <constraint firstItem="Isp-kJ-BMc" firstAttribute="top" secondItem="rlL-2d-hzg" secondAttribute="top" constant="50" id="hOk-Zi-sHw"/>
+                            <constraint firstAttribute="bottom" secondItem="Djq-Os-Cpy" secondAttribute="bottom" constant="5" id="jfF-9E-kAT"/>
+                            <constraint firstItem="Isp-kJ-BMc" firstAttribute="leading" secondItem="rlL-2d-hzg" secondAttribute="leading" id="ogi-cf-JFs"/>
+                            <constraint firstItem="Isp-kJ-BMc" firstAttribute="trailing" secondItem="rlL-2d-hzg" secondAttribute="trailing" id="w9t-P7-n1Z"/>
+                            <constraint firstItem="rlL-2d-hzg" firstAttribute="trailing" secondItem="Djq-Os-Cpy" secondAttribute="trailing" id="yck-hh-NP4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="elE-vS-P3c">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="2k6-4x-Ofv">
+                            <connections>
+                                <segue destination="cNV-E3-Mzp" kind="show" id="muE-Rt-pRd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RGF-RO-SIl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6764" y="54"/>
+        </scene>
+        <!--Stage2 Rule Last View Controller-->
+        <scene sceneID="rLy-fv-LSk">
+            <objects>
+                <viewController id="cNV-E3-Mzp" customClass="Stage2RuleLastViewController" customModule="JobCraftingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lQQ-Js-UFM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あとは実践あるのみです！  周りの人に影響が出る方法は コミュニケーションを忘れずに  実践できたら チェックマークをつけましょう  よきジョブクラフティングライフを！" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zk7-lU-tB3">
+                                <rect key="frame" x="0.0" y="138" width="414" height="172"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="スクリーンショット 2021-01-22 12.56.23" translatesAutoresizingMaskIntoConstraints="NO" id="fbt-gf-wpD">
+                                <rect key="frame" x="103.5" y="641" width="207" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="1jX-JJ-Ch5"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ywG-Du-V3D"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zk7-lU-tB3" firstAttribute="trailing" secondItem="ywG-Du-V3D" secondAttribute="trailing" id="BSJ-SD-h8v"/>
+                            <constraint firstItem="fbt-gf-wpD" firstAttribute="width" secondItem="lQQ-Js-UFM" secondAttribute="width" multiplier="0.5" id="Gjb-j7-hx9"/>
+                            <constraint firstItem="Zk7-lU-tB3" firstAttribute="leading" secondItem="ywG-Du-V3D" secondAttribute="leading" id="KL4-M5-DhF"/>
+                            <constraint firstAttribute="bottom" secondItem="fbt-gf-wpD" secondAttribute="bottom" constant="5" id="hJb-Du-VuP"/>
+                            <constraint firstItem="Zk7-lU-tB3" firstAttribute="top" secondItem="ywG-Du-V3D" secondAttribute="top" constant="50" id="o99-XP-M9q"/>
+                            <constraint firstItem="fbt-gf-wpD" firstAttribute="centerX" secondItem="lQQ-Js-UFM" secondAttribute="centerX" id="u5N-w6-qUI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dYY-ar-7DD">
+                        <barButtonItem key="rightBarButtonItem" title="Start!" id="b2n-zo-IK8">
+                            <connections>
+                                <action selector="startButtonAction:" destination="cNV-E3-Mzp" id="Da0-bG-xgZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7tv-PR-iAC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7519" y="43"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="c7W-rX-LRH">
+        <scene sceneID="7Ed-23-h2n">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mcw-wk-yjS" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="rEk-gR-UY6" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DdY-n2-CXc">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dla-4y-Qm8">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.31424575199999999" green="1" blue="0.95962464260000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="W0w-G2-Gyr" kind="relationship" relationship="rootViewController" id="d6Y-Za-NKa"/>
+                        <segue destination="MF2-b6-cay" kind="relationship" relationship="rootViewController" id="0vf-2k-5q3"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="20l-sP-DPR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Wc-wa-lVh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-17.39130434782609" y="52.901785714285715"/>
+            <point key="canvasLocation" x="1646.376811594203" y="59.598214285714285"/>
         </scene>
     </scenes>
     <resources>
+        <image name="スクリーンショット 2021-01-22 12.00.31" width="371" height="747"/>
+        <image name="スクリーンショット 2021-01-22 12.07.52" width="367" height="744"/>
+        <image name="スクリーンショット 2021-01-22 12.14.35" width="370" height="752"/>
+        <image name="スクリーンショット 2021-01-22 12.14.42" width="367" height="753"/>
+        <image name="スクリーンショット 2021-01-22 12.14.59" width="370" height="749"/>
+        <image name="スクリーンショット 2021-01-22 12.19.07" width="369" height="753"/>
+        <image name="スクリーンショット 2021-01-22 12.47.12" width="372" height="751"/>
+        <image name="スクリーンショット 2021-01-22 12.49.17" width="371" height="751"/>
+        <image name="スクリーンショット 2021-01-22 12.49.22" width="373" height="750"/>
+        <image name="スクリーンショット 2021-01-22 12.56.13" width="374" height="754"/>
+        <image name="スクリーンショット 2021-01-22 12.56.18" width="371" height="755"/>
+        <image name="スクリーンショット 2021-01-22 12.56.23" width="371" height="749"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

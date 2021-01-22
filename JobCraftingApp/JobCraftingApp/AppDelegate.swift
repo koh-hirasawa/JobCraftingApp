@@ -9,10 +9,18 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+   
+    
+    var delVectorArray:[[String]] = [[],[],[]]
+    
+//    stage1の問題切替がどうしてもできなくてAppDelegateに　要修正
+   var quiz1Select = 0
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        //最初の画面を表示する時間を1.8秒にする
         sleep(UInt32(1.8))
         
         // Override point for customization after application launch.

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6XU-45-As8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6XU-45-As8">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -43,11 +43,182 @@
                     <navigationItem key="navigationItem" title="ジョブ・クラフティング　アプリ" largeTitleDisplayMode="never" id="j6O-96-S5s"/>
                     <connections>
                         <outlet property="mainTableView" destination="381-NW-WBO" id="wlW-gA-bZP"/>
+                        <segue destination="Wu0-WN-VkX" kind="presentation" identifier="stage0Segue" id="19D-Fp-VVV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="732" y="82"/>
+            <point key="canvasLocation" x="884" y="82"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="E7f-F0-G5v">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="4qO-a8-ryF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EnS-yH-XHr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ジョブクラフティングアプリへ ようこそ!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ya3-w3-WhK">
+                                <rect key="frame" x="0.0" y="138" width="414" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lPm-dr-9nt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ya3-w3-WhK" firstAttribute="centerX" secondItem="EnS-yH-XHr" secondAttribute="centerX" id="5kX-JU-Civ"/>
+                            <constraint firstItem="ya3-w3-WhK" firstAttribute="top" secondItem="lPm-dr-9nt" secondAttribute="top" constant="50" id="AD4-Lu-w2s"/>
+                            <constraint firstItem="lPm-dr-9nt" firstAttribute="trailing" secondItem="ya3-w3-WhK" secondAttribute="trailing" id="iGC-Iz-Liy"/>
+                            <constraint firstItem="ya3-w3-WhK" firstAttribute="leading" secondItem="lPm-dr-9nt" secondAttribute="leading" id="wM5-uj-uI6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Su2-1i-hEP">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="sr7-84-jrf">
+                            <connections>
+                                <segue destination="ak0-KA-yk6" kind="show" id="1cO-Yz-Ro7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="or2-Kz-f9I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2705.7971014492755" y="81.696428571428569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BtH-am-HEL">
+            <objects>
+                <viewController id="ak0-KA-yk6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7PI-ZJ-UOc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="このアプリでは 自分が働きやすい働き方を 自分で工夫する  ジョブクラフティング  について学び そして実践することができます" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DH6-jd-JqY">
+                                <rect key="frame" x="0.0" y="138" width="414" height="191"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="i9b-de-bqX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DH6-jd-JqY" firstAttribute="leading" secondItem="i9b-de-bqX" secondAttribute="leading" id="5mP-4g-8Q9"/>
+                            <constraint firstItem="i9b-de-bqX" firstAttribute="trailing" secondItem="DH6-jd-JqY" secondAttribute="trailing" id="BzS-br-Mzg"/>
+                            <constraint firstItem="DH6-jd-JqY" firstAttribute="centerX" secondItem="7PI-ZJ-UOc" secondAttribute="centerX" id="pYv-uJ-yNf"/>
+                            <constraint firstItem="DH6-jd-JqY" firstAttribute="top" secondItem="i9b-de-bqX" secondAttribute="top" constant="50" id="zft-7t-TIu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dWh-ba-nld">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="Hh6-sR-28V">
+                            <connections>
+                                <segue destination="1M0-C1-fVh" kind="show" id="eBD-bq-zVB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X7q-te-jaK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3437.68115942029" y="81.696428571428569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KJo-qY-ttK">
+            <objects>
+                <viewController id="1M0-C1-fVh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="crb-Hg-LBK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="まずはStage1:入門編で ジョブクラフティングとは どのような活動なのか 学んでいきましょう" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Pz-Qf-Zt8">
+                                <rect key="frame" x="0.0" y="138" width="414" height="95.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="スクリーンショット 2021-01-22 10.25.07-1" translatesAutoresizingMaskIntoConstraints="NO" id="DAx-wB-e6V">
+                                <rect key="frame" x="103.5" y="607" width="207" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="ojO-JB-OPZ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tw5-7g-Q9A"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DAx-wB-e6V" firstAttribute="width" secondItem="crb-Hg-LBK" secondAttribute="width" multiplier="0.5" id="7Wq-fk-OLQ"/>
+                            <constraint firstItem="5Pz-Qf-Zt8" firstAttribute="leading" secondItem="tw5-7g-Q9A" secondAttribute="leading" id="7lr-mL-cgc"/>
+                            <constraint firstItem="5Pz-Qf-Zt8" firstAttribute="trailing" secondItem="tw5-7g-Q9A" secondAttribute="trailing" id="Sg5-gF-6DY"/>
+                            <constraint firstItem="tw5-7g-Q9A" firstAttribute="bottom" secondItem="DAx-wB-e6V" secondAttribute="bottom" constant="5" id="UNj-hL-aLT"/>
+                            <constraint firstItem="DAx-wB-e6V" firstAttribute="centerX" secondItem="crb-Hg-LBK" secondAttribute="centerX" id="a8B-Tj-TvG"/>
+                            <constraint firstItem="5Pz-Qf-Zt8" firstAttribute="top" secondItem="tw5-7g-Q9A" secondAttribute="top" constant="50" id="w54-dV-6yL"/>
+                            <constraint firstItem="5Pz-Qf-Zt8" firstAttribute="centerX" secondItem="crb-Hg-LBK" secondAttribute="centerX" id="wot-dk-qM5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3WU-Yd-AUx">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="NTO-10-r8h">
+                            <connections>
+                                <segue destination="iG0-ET-f0F" kind="show" id="LVj-sx-jss"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1z1-JV-NXV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4190" y="82"/>
+        </scene>
+        <!--Stage0 Last View Controller-->
+        <scene sceneID="gO2-Vi-LCj">
+            <objects>
+                <viewController storyboardIdentifier="Stage0LastViewController" id="iG0-ET-f0F" customClass="Stage0LastViewController" customModule="JobCraftingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jok-oX-1fD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="かんたんな３択クイズで ジョブクラフティングの イメージを膨らませていきましょう  1セットたったの4問なので 電車の待ち時間など ちょこちょこ進めるのもオススメです" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZP-UB-ci1">
+                                <rect key="frame" x="0.0" y="138" width="414" height="167.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="スクリーンショット 2021-01-22 10.24.42" translatesAutoresizingMaskIntoConstraints="NO" id="AGu-UT-FcV">
+                                <rect key="frame" x="0.0" y="617" width="207" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="xCQ-PT-ncj"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="スクリーンショット 2021-01-22 10.26.31-1" translatesAutoresizingMaskIntoConstraints="NO" id="Fcj-Gi-81w">
+                                <rect key="frame" x="207" y="617" width="207" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="0iL-fr-igW"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LNc-X6-rXU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xZP-UB-ci1" firstAttribute="top" secondItem="LNc-X6-rXU" secondAttribute="top" constant="50" id="E8e-eM-r6k"/>
+                            <constraint firstItem="Fcj-Gi-81w" firstAttribute="width" secondItem="jok-oX-1fD" secondAttribute="width" multiplier="0.5" id="PCS-4R-VAX"/>
+                            <constraint firstItem="Fcj-Gi-81w" firstAttribute="trailing" secondItem="LNc-X6-rXU" secondAttribute="trailing" id="PZc-Pb-Ber"/>
+                            <constraint firstItem="AGu-UT-FcV" firstAttribute="leading" secondItem="LNc-X6-rXU" secondAttribute="leading" id="RaK-BS-ck0"/>
+                            <constraint firstItem="xZP-UB-ci1" firstAttribute="leading" secondItem="LNc-X6-rXU" secondAttribute="leading" id="UfM-hh-0yQ"/>
+                            <constraint firstItem="xZP-UB-ci1" firstAttribute="trailing" secondItem="LNc-X6-rXU" secondAttribute="trailing" id="XdQ-Gy-Eyh"/>
+                            <constraint firstItem="AGu-UT-FcV" firstAttribute="bottom" secondItem="LNc-X6-rXU" secondAttribute="bottom" constant="5" id="fPH-Nm-cJB"/>
+                            <constraint firstItem="Fcj-Gi-81w" firstAttribute="bottom" secondItem="LNc-X6-rXU" secondAttribute="bottom" constant="5" id="kRQ-Kr-TrJ"/>
+                            <constraint firstItem="AGu-UT-FcV" firstAttribute="width" secondItem="jok-oX-1fD" secondAttribute="width" multiplier="0.5" id="oH9-d1-kRE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SNW-lD-1Gk">
+                        <barButtonItem key="rightBarButtonItem" title="Start!" id="KxF-TK-eD3">
+                            <connections>
+                                <action selector="backMenuButtonAction:" destination="iG0-ET-f0F" id="hxF-B6-tGD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y6L-pH-3Cc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4962" y="82"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ukb-Oz-c93">
@@ -68,8 +239,30 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="81.696428571428569"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MYb-0l-maO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="Wu0-WN-VkX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CWi-A6-TfS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemTealColor"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4qO-a8-ryF" kind="relationship" relationship="rootViewController" id="dat-in-y7h"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kLQ-zM-SH6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1795.6521739130437" y="81.696428571428569"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="スクリーンショット 2021-01-22 10.24.42" width="371" height="751"/>
+        <image name="スクリーンショット 2021-01-22 10.25.07-1" width="367" height="749"/>
+        <image name="スクリーンショット 2021-01-22 10.26.31-1" width="369" height="750"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C1B78D325B91A9700F800E4 /* Stage2Craft.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C1B78D225B91A9700F800E4 /* Stage2Craft.storyboard */; };
+		0C1B78D625B91DA800F800E4 /* Stage2TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1B78D525B91DA800F800E4 /* Stage2TaskListViewController.swift */; };
+		0C1B78DB25B95D0D00F800E4 /* Stage2VectorListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1B78DA25B95D0D00F800E4 /* Stage2VectorListViewController.swift */; };
+		0C1B78E025B9A8A500F800E4 /* AddCraftingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1B78DF25B9A8A500F800E4 /* AddCraftingViewController.swift */; };
+		0C55972E25B65E9F00FA33CF /* correct.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C55972C25B65E9F00FA33CF /* correct.png */; };
+		0C55972F25B65E9F00FA33CF /* incorrect.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C55972D25B65E9F00FA33CF /* incorrect.png */; };
 		0C6F2CAB25B55CE80066F008 /* Stage2List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C6F2CAA25B55CE80066F008 /* Stage2List.storyboard */; };
 		0C6F2CAE25B55D850066F008 /* Stage2ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6F2CAD25B55D850066F008 /* Stage2ListViewController.swift */; };
 		0C6F2CB125B568700066F008 /* Stage1Quiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C6F2CB025B568700066F008 /* Stage1Quiz.storyboard */; };
@@ -21,9 +27,17 @@
 		0C76653225AC9A200009009D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C76653025AC9A200009009D /* LaunchScreen.storyboard */; };
 		0C76662425B4824A0009009D /* Stage1List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C76662325B4824A0009009D /* Stage1List.storyboard */; };
 		0C76662725B4846C0009009D /* Stage1ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C76662625B4846C0009009D /* Stage1ListViewController.swift */; };
+		0CA5671125BA706B00E57347 /* Stage0LastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5671025BA706A00E57347 /* Stage0LastViewController.swift */; };
+		0CA5671A25BAA41100E57347 /* Stage2RuleLastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5671925BAA41000E57347 /* Stage2RuleLastViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C1B78D225B91A9700F800E4 /* Stage2Craft.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Stage2Craft.storyboard; sourceTree = "<group>"; };
+		0C1B78D525B91DA800F800E4 /* Stage2TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage2TaskListViewController.swift; sourceTree = "<group>"; };
+		0C1B78DA25B95D0D00F800E4 /* Stage2VectorListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage2VectorListViewController.swift; sourceTree = "<group>"; };
+		0C1B78DF25B9A8A500F800E4 /* AddCraftingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCraftingViewController.swift; sourceTree = "<group>"; };
+		0C55972C25B65E9F00FA33CF /* correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = correct.png; sourceTree = "<group>"; };
+		0C55972D25B65E9F00FA33CF /* incorrect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = incorrect.png; sourceTree = "<group>"; };
 		0C6F2CAA25B55CE80066F008 /* Stage2List.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Stage2List.storyboard; sourceTree = "<group>"; };
 		0C6F2CAD25B55D850066F008 /* Stage2ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage2ListViewController.swift; sourceTree = "<group>"; };
 		0C6F2CB025B568700066F008 /* Stage1Quiz.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Stage1Quiz.storyboard; sourceTree = "<group>"; };
@@ -40,6 +54,8 @@
 		0C76653325AC9A200009009D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C76662325B4824A0009009D /* Stage1List.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Stage1List.storyboard; sourceTree = "<group>"; };
 		0C76662625B4846C0009009D /* Stage1ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage1ListViewController.swift; sourceTree = "<group>"; };
+		0CA5671025BA706A00E57347 /* Stage0LastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage0LastViewController.swift; sourceTree = "<group>"; };
+		0CA5671925BAA41000E57347 /* Stage2RuleLastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage2RuleLastViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +69,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C55972B25B65E9F00FA33CF /* image */ = {
+			isa = PBXGroup;
+			children = (
+				0C55972C25B65E9F00FA33CF /* correct.png */,
+				0C55972D25B65E9F00FA33CF /* incorrect.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
 		0C6F2CC025B57DFB0066F008 /* Stage1Quiz */ = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +85,7 @@
 				0C6F2CBA25B572270066F008 /* Stage1ScoreViewController.swift */,
 				0C6F2CBD25B57DE80066F008 /* quiz.csv */,
 				0C6F2CB025B568700066F008 /* Stage1Quiz.storyboard */,
+				0C55972B25B65E9F00FA33CF /* image */,
 			);
 			path = Stage1Quiz;
 			sourceTree = "<group>";
@@ -71,6 +97,7 @@
 				0C76652325AC9A170009009D /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		0C76652325AC9A170009009D /* Products */ = {
 			isa = PBXGroup;
@@ -85,8 +112,9 @@
 			children = (
 				0C76652525AC9A170009009D /* AppDelegate.swift */,
 				0C76652725AC9A180009009D /* SceneDelegate.swift */,
-				0C76652925AC9A180009009D /* ViewController.swift */,
 				0C76652B25AC9A180009009D /* Main.storyboard */,
+				0C76652925AC9A180009009D /* ViewController.swift */,
+				0CA5671025BA706A00E57347 /* Stage0LastViewController.swift */,
 				0C76652E25AC9A200009009D /* Assets.xcassets */,
 				0C76653325AC9A200009009D /* Info.plist */,
 				0C76653025AC9A200009009D /* LaunchScreen.storyboard */,
@@ -110,7 +138,12 @@
 			isa = PBXGroup;
 			children = (
 				0C6F2CAA25B55CE80066F008 /* Stage2List.storyboard */,
+				0CA5671925BAA41000E57347 /* Stage2RuleLastViewController.swift */,
 				0C6F2CAD25B55D850066F008 /* Stage2ListViewController.swift */,
+				0C1B78D225B91A9700F800E4 /* Stage2Craft.storyboard */,
+				0C1B78D525B91DA800F800E4 /* Stage2TaskListViewController.swift */,
+				0C1B78DA25B95D0D00F800E4 /* Stage2VectorListViewController.swift */,
+				0C1B78DF25B9A8A500F800E4 /* AddCraftingViewController.swift */,
 			);
 			path = "Stage2Let'sCraft";
 			sourceTree = "<group>";
@@ -172,12 +205,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C55972E25B65E9F00FA33CF /* correct.png in Resources */,
 				0C76653225AC9A200009009D /* LaunchScreen.storyboard in Resources */,
 				0C76652F25AC9A200009009D /* Assets.xcassets in Resources */,
 				0C6F2CB125B568700066F008 /* Stage1Quiz.storyboard in Resources */,
 				0C76662425B4824A0009009D /* Stage1List.storyboard in Resources */,
 				0C6F2CBE25B57DE80066F008 /* quiz.csv in Resources */,
 				0C6F2CAB25B55CE80066F008 /* Stage2List.storyboard in Resources */,
+				0C1B78D325B91A9700F800E4 /* Stage2Craft.storyboard in Resources */,
+				0C55972F25B65E9F00FA33CF /* incorrect.png in Resources */,
 				0C76652D25AC9A180009009D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,13 +225,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C1B78E025B9A8A500F800E4 /* AddCraftingViewController.swift in Sources */,
 				0C6F2CAE25B55D850066F008 /* Stage2ListViewController.swift in Sources */,
 				0C76652A25AC9A180009009D /* ViewController.swift in Sources */,
 				0C76662725B4846C0009009D /* Stage1ListViewController.swift in Sources */,
 				0C76652625AC9A170009009D /* AppDelegate.swift in Sources */,
 				0C6F2CB825B570A90066F008 /* Stage1QuizViewController.swift in Sources */,
+				0CA5671A25BAA41100E57347 /* Stage2RuleLastViewController.swift in Sources */,
 				0C76652825AC9A180009009D /* SceneDelegate.swift in Sources */,
 				0C6F2CBB25B572270066F008 /* Stage1ScoreViewController.swift in Sources */,
+				0C1B78D625B91DA800F800E4 /* Stage2TaskListViewController.swift in Sources */,
+				0CA5671125BA706B00E57347 /* Stage0LastViewController.swift in Sources */,
+				0C1B78DB25B95D0D00F800E4 /* Stage2VectorListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,13 +385,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 588GRZ388U;
+				DEVELOPMENT_TEAM = KXKDYU2SXM;
 				INFOPLIST_FILE = JobCraftingApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.koh-hirasawa.JobCraftingApp";
+				PRODUCT_BUNDLE_IDENTIFIER = kohH.JobCraftingApp20210119;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -365,13 +406,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 588GRZ388U;
+				DEVELOPMENT_TEAM = KXKDYU2SXM;
 				INFOPLIST_FILE = JobCraftingApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.koh-hirasawa.JobCraftingApp";
+				PRODUCT_BUNDLE_IDENTIFIER = kohH.JobCraftingApp20210119;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;

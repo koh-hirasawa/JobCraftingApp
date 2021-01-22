@@ -43,4 +43,20 @@ extension Stage2ListViewController: UITableViewDelegate,UITableViewDataSource{
     }
     
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        switch indexPath.row {
+        case 0:
+            self.performSegue(withIdentifier: "craftRuleSegue", sender: self)
+        case 1:
+            let storyboard = UIStoryboard.init(name: "Stage2Craft", bundle: nil)
+            let stage2CraftViewController = storyboard.instantiateViewController(withIdentifier: "tabBar") as! UITabBarController
+            navigationController?.pushViewController(stage2CraftViewController, animated: true)
+            
+            
+        default:
+            break
+        }
+    }
+    
 }
