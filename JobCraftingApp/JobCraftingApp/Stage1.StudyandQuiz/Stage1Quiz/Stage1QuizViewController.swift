@@ -30,11 +30,15 @@ class Stage1QuizViewController: UIViewController {
     var quizCount = 0
     
     
+    
     var quizSelect: Int!
+    var quizSet = 0
 
     var correctCount = 0
     
     func loadCSV(fileName: String) -> [String] {
+        
+        
         let csvBundle = Bundle.main.path(forResource: fileName, ofType: "csv")!
         do {
             let csvData = try String(contentsOfFile: csvBundle,encoding: String.Encoding.utf8)
@@ -54,10 +58,14 @@ class Stage1QuizViewController: UIViewController {
     
     
 //    1問目作成
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         let delegate = UIApplication.shared.delegate as! AppDelegate
+        quizSet = delegate.quiz1set
         quizSelect = delegate.quiz1Select
         
         nextQuizButton.isEnabled = false
@@ -122,7 +130,7 @@ class Stage1QuizViewController: UIViewController {
         answerButton3.isHidden = true
         
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             self.nextQuizButton.isEnabled = true
             self.nextQuizButton.isHidden = false
         }
@@ -152,7 +160,7 @@ class Stage1QuizViewController: UIViewController {
         quizCount += 1
         quizSelect += 1
         
-        if quizCount < 4 {
+        if quizCount < quizSet {
             quizArray = csvArray[quizSelect].components(separatedBy: ",")
             quizArray[0] = quizArray[0].replacingOccurrences(of: "　", with: "\n")
             quizArray[5] = quizArray[5].replacingOccurrences(of: "　", with: "\n")

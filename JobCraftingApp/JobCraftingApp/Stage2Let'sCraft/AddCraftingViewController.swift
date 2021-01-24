@@ -61,7 +61,7 @@ class AddCraftingViewController: UIViewController,UITabBarDelegate,UITableViewDa
         case 1:
             label = "わたしの強み\n持っているスキル・特技"
         case 2:
-            label = "わたしの熱意\n興味関心があるもの・趣味"
+            label = "わたしの情熱\n興味関心があるもの・趣味"
         default:
             break
         }

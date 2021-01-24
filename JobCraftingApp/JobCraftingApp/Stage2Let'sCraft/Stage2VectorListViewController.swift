@@ -68,7 +68,7 @@ class Stage2VectorListViewController: UITableViewController, UITextFieldDelegate
             label.backgroundColor = .blue
             label.textColor = .white
         case 2:
-            label.text = "わたしの熱意\n興味関心があるもの・趣味"
+            label.text = "わたしの情熱\n興味関心があるもの・趣味"
             label.backgroundColor = .orange
             label.textColor = .black
         
@@ -107,7 +107,7 @@ class Stage2VectorListViewController: UITableViewController, UITextFieldDelegate
     
     @IBAction func addVectorButtonAction(_ sender: Any) {
         var textField = UITextField()
-        let alert = UIAlertController(title: "あなたの動機、強み、熱意を入力", message: "仕事で得たいものや、生かしたいスキル、仕事関係なく興味関心があるものを書き出しましょう　\nできるだけ具体的に書くことが大切です", preferredStyle: .alert)
+        let alert = UIAlertController(title: "あなたの動機、強み、情熱を入力", message: "仕事で得たいものや、生かしたいスキル、仕事関係なく興味関心があるものを書き出しましょう　\nできるだけ具体的に書くことが大切です", preferredStyle: .alert)
         let motiveAction = UIAlertAction(title: "わたしの動機に追加", style: .default){(action) in
             let newvector = textField.text!
             vectorArray[0].append(newvector)
@@ -122,7 +122,7 @@ class Stage2VectorListViewController: UITableViewController, UITextFieldDelegate
             
         }
         
-        let passionAction = UIAlertAction(title: "わたしの熱意に追加", style: .default){(action) in
+        let passionAction = UIAlertAction(title: "わたしの情熱に追加", style: .default){(action) in
             let newvector = textField.text!
             vectorArray[2].append(newvector)
             self.tableView.reloadData()

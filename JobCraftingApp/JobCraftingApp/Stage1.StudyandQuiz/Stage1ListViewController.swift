@@ -9,8 +9,8 @@ import UIKit
 
 //各章のタイトルを先に定義
 private let stage1Menu = [
-     ["ジョブクラフティングって何？","ジョブクラフティングの3つの分類","ジョブクラフティングの3つの軸"],
-    ["モデルケース1","モデルケース2","モデルケース3","モデルケース4"]
+     ["ジョブクラフティングって何？","ジョブクラフティングの3つの実践方法","ジョブクラフティングの「自分の3つの軸」"],
+    ["モデルケース1","モデルケース2","モデルケース3"]
 ]
 
 
@@ -93,7 +93,8 @@ extension Stage1ListViewController: UITableViewDelegate,UITableViewDataSource{
         
         //移動先コントロールビューに「押されたセルから計算した問題番号」を受け渡し
         let delegate = UIApplication.shared.delegate as! AppDelegate
-        delegate.quiz1Select = ( (indexPath.section) * 3 + (indexPath.row) ) * 4
+        delegate.quiz1set = 4 - indexPath.section
+        delegate.quiz1Select =  (indexPath.section) * 12 + (indexPath.row) * (delegate.quiz1set)
         
         
         //画面遷移、上の１行はモーダル遷移をフルスクリーンにするもの

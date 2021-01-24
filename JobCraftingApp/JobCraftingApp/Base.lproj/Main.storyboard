@@ -68,7 +68,6 @@
                         <viewLayoutGuide key="safeArea" id="lPm-dr-9nt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ya3-w3-WhK" firstAttribute="centerX" secondItem="EnS-yH-XHr" secondAttribute="centerX" id="5kX-JU-Civ"/>
                             <constraint firstItem="ya3-w3-WhK" firstAttribute="top" secondItem="lPm-dr-9nt" secondAttribute="top" constant="50" id="AD4-Lu-w2s"/>
                             <constraint firstItem="lPm-dr-9nt" firstAttribute="trailing" secondItem="ya3-w3-WhK" secondAttribute="trailing" id="iGC-Iz-Liy"/>
                             <constraint firstItem="ya3-w3-WhK" firstAttribute="leading" secondItem="lPm-dr-9nt" secondAttribute="leading" id="wM5-uj-uI6"/>
@@ -106,7 +105,6 @@
                         <constraints>
                             <constraint firstItem="DH6-jd-JqY" firstAttribute="leading" secondItem="i9b-de-bqX" secondAttribute="leading" id="5mP-4g-8Q9"/>
                             <constraint firstItem="i9b-de-bqX" firstAttribute="trailing" secondItem="DH6-jd-JqY" secondAttribute="trailing" id="BzS-br-Mzg"/>
-                            <constraint firstItem="DH6-jd-JqY" firstAttribute="centerX" secondItem="7PI-ZJ-UOc" secondAttribute="centerX" id="pYv-uJ-yNf"/>
                             <constraint firstItem="DH6-jd-JqY" firstAttribute="top" secondItem="i9b-de-bqX" secondAttribute="top" constant="50" id="zft-7t-TIu"/>
                         </constraints>
                     </view>
@@ -152,7 +150,6 @@
                             <constraint firstItem="tw5-7g-Q9A" firstAttribute="bottom" secondItem="DAx-wB-e6V" secondAttribute="bottom" constant="5" id="UNj-hL-aLT"/>
                             <constraint firstItem="DAx-wB-e6V" firstAttribute="centerX" secondItem="crb-Hg-LBK" secondAttribute="centerX" id="a8B-Tj-TvG"/>
                             <constraint firstItem="5Pz-Qf-Zt8" firstAttribute="top" secondItem="tw5-7g-Q9A" secondAttribute="top" constant="50" id="w54-dV-6yL"/>
-                            <constraint firstItem="5Pz-Qf-Zt8" firstAttribute="centerX" secondItem="crb-Hg-LBK" secondAttribute="centerX" id="wot-dk-qM5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3WU-Yd-AUx">

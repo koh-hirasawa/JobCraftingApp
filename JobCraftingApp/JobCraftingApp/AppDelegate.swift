@@ -14,7 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var delVectorArray:[[String]] = [[],[],[]]
     
 //    stage1の問題切替がどうしてもできなくてAppDelegateに　要修正
-   var quiz1Select = 0
+    var quiz1Select = 0
+    var quiz1set = 0
 
 
 

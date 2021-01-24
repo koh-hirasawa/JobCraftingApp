@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6j-3C-tau">
-                                <rect key="frame" x="20" y="58" width="335" height="400"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6j-3C-tau">
+                                <rect key="frame" x="20" y="100" width="335" height="335"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dV-Hs-SQF">
                                 <rect key="frame" x="254" y="523" width="106" height="44"/>
@@ -57,20 +57,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OKG-vq-DsJ">
-                                <rect key="frame" x="5" y="40" width="365" height="300"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="250" id="yvi-Wr-jvT"/>
-                                </constraints>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKG-vq-DsJ">
+                                <rect key="frame" x="5" y="76" width="365" height="308"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FpR-F2-YPt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="0dV-Hs-SQF" firstAttribute="top" secondItem="g6j-3C-tau" secondAttribute="bottom" constant="88" id="0gb-HX-Y6L"/>
+                            <constraint firstItem="J5h-hE-KyE" firstAttribute="top" secondItem="OKG-vq-DsJ" secondAttribute="bottom" constant="10" id="6Ny-TM-ASZ"/>
                             <constraint firstItem="FpR-F2-YPt" firstAttribute="trailing" secondItem="g6j-3C-tau" secondAttribute="trailing" constant="20" id="7tE-Bx-t5X"/>
                             <constraint firstItem="g6j-3C-tau" firstAttribute="leading" secondItem="FpR-F2-YPt" secondAttribute="leading" constant="20" id="CKz-2C-IXu"/>
                             <constraint firstItem="FpR-F2-YPt" firstAttribute="bottom" secondItem="0dV-Hs-SQF" secondAttribute="bottom" constant="100" id="Cyp-Ua-H5D"/>
@@ -89,6 +88,7 @@
                             <constraint firstItem="FpR-F2-YPt" firstAttribute="trailing" secondItem="q30-ug-Bw6" secondAttribute="trailing" constant="20" id="dnR-sf-kK2"/>
                             <constraint firstItem="q30-ug-Bw6" firstAttribute="top" secondItem="J5h-hE-KyE" secondAttribute="bottom" constant="55" id="g8t-9Y-jsO"/>
                             <constraint firstItem="g6j-3C-tau" firstAttribute="top" secondItem="GpK-KR-3k2" secondAttribute="top" constant="100" id="p2O-Ni-cTF"/>
+                            <constraint firstItem="g6j-3C-tau" firstAttribute="centerX" secondItem="GpK-KR-3k2" secondAttribute="centerX" id="qhH-PS-AQH"/>
                             <constraint firstItem="j2T-LW-VxL" firstAttribute="top" secondItem="q30-ug-Bw6" secondAttribute="bottom" constant="55" id="zbo-4f-qtL"/>
                         </constraints>
                     </view>
@@ -130,12 +130,12 @@
                                     <action selector="toMenuButton:" destination="m2r-qE-86Y" eventType="touchUpInside" id="MNK-jD-afQ"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" delaysContentTouches="NO" canCancelContentTouches="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7fL-bo-9cp">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fL-bo-9cp">
                                 <rect key="frame" x="20" y="146" width="335" height="365"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
